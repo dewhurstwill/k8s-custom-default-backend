@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: custom-default-backend
-        image: ansgroup/custom-default-backend:v1.0.0
+        image: some_registry/k8s-custom-default-backend:some_tag
         imagePullPolicy: Always
         ports:
         - containerPort: 80
