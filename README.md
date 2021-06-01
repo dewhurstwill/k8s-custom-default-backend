@@ -26,7 +26,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: custom-default-backend
-  namespace: kube-system
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: custom-default-backend
     app.kubernetes.io/part-of: ingress-nginx
@@ -43,7 +43,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: custom-default-backend
-  namespace: kube-system
+  namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: custom-default-backend
     app.kubernetes.io/part-of: ingress-nginx
@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: custom-default-backend
-        image: some_registry/k8s-custom-default-backend:some_tag
+        image: registry/k8s-custom-default-backend:some_tag
         imagePullPolicy: Always
         ports:
         - containerPort: 80
