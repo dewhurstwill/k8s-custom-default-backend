@@ -1,6 +1,8 @@
 # K8S Custom Default Backend
 
-## Build instructions
+## Build instructions 
+
+### React.JS
 
 1. Run docker build
 
@@ -16,7 +18,28 @@ docker push some_registry/k8s-custom-default-backend:some_tag
 
 <br/>
 
-## Usage instructions
+### Build Instructions (Native HTML + CSS + JS)
+
+1. Delete template from content folder
+2. Place index.html and related css/js files in content folder
+3. Remove lines 1 through 19 inclusive in Dockerfile
+4. Replace the new line 12 with `COPY ./content /var/www/html/` in Dockerfile
+5. Run docker build
+
+```bash
+docker build -t some_tag .
+```
+
+6. Push image to registry
+
+```bash
+docker push some_registry/k8s-custom-default-backend:some_tag
+```
+
+
+<br/>
+
+## Usage instructions 
 
 1. Create manifest (custom_default_backend.yaml)
 
