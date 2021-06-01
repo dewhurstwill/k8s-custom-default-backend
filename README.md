@@ -1,5 +1,7 @@
 # K8S Custom Default Backend
 
+![default backend](https://i.imgur.com/Ar1hSvL.png)
+
 ## Build instructions 
 
 ### React.JS
