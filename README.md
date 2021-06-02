@@ -112,6 +112,6 @@ helm install nginx-ingress --namespace kube-system ingress-nginx/ingress-nginx -
 
 ## Supporting
 
-Please consider supporting my project, the more caffine I have, the quicker I can type.
+Please consider supporting my projects, the more caffine I have, the quicker I can type.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/willdewhurst)
